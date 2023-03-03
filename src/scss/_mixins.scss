@@ -1,0 +1,46 @@
+@mixin bgImg($height) {
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.3)
+    ),
+    url("../assets/img/model-1.jpg");
+  width: 100%;
+  height: $height;
+  background-position: center center;
+  background-size: cover;
+}
+
+@mixin transition($second) {
+  transition: all $second;
+}
+
+@mixin media-xsm {
+  @media screen and (min-width: 0px) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.link-style {
+  a {
+    padding: 0.5rem;
+    @include transition(1s);
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+.horizantal {
+  height: 10vh;
+  @extend .link-style;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  @extend .link-style;
+}
+
+.copyright {
+  // transform: rotate(90deg) translate(-2rem,-5rem);
+  //writing-mode: vertical-lr;
+  color: $secondary-color;
+}
+

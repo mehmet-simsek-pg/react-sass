@@ -1,0 +1,35 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.nav {
+  padding: 1rem;
+  height: vh;
+
+  &__list {
+    text-align: right;
+  }
+
+  &__item {
+    display: inline;
+    padding: 1rem;
+  }
+  &__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $font-family;
+    font-size: 1rem;
+    font-weight: 600;
+
+    &:hover {
+      color: rgb(211, 14, 198);
+      border: 2px solid #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 2px gray;
+      font-size: 20px;
+      @include transition(1s);
+    }
+    &-active {
+      color: $secondary-color;
+    }
+  }
+}

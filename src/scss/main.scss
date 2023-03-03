@@ -1,0 +1,28 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+// --base--
+@import "./reset";
+
+// ---abstract---
+@import "./mixins";
+@import "./variables";
+
+// ---component---
+
+@import "../components/navbar/Navbar.scss";
+
+// ----pages---
+
+@import "../pages/about/About.scss";
+@import "../pages/home/Home.scss";
+@import "../pages/contact/Contact.scss";
+@import "../pages/projects/Projects.scss";
+
+body {
+  background-color: $primary-color;
+  color: $text-color;
+  font-family: $font-family;
+}
+a {
+  color: $text-color;
+}
