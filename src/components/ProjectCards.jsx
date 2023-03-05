@@ -1,7 +1,11 @@
+import "../pages/projects/Projects.scss"
 
+const ProjectCards = ({ image, alt }) => {
+  return (
+    <div className="projects__item">
+      <img src={image} alt={alt} />
+    </div>
+  );
+};
 
-const ProjectCards = () => {
-  return <div>ProjectCards</div>;
-}
-
-export default ProjectCards
+export default ProjectCards;

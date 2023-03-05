@@ -11,12 +11,18 @@
   }
 }
 
-.horizantal {
-  height: 10vh;
-  @extend .link-style;
+.vertical {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.horizantal {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  padding: 1rem;
 }
 
 .social-icons {
@@ -28,4 +34,3 @@
   //writing-mode: vertical-lr;
   color: $secondary-color;
 }
-

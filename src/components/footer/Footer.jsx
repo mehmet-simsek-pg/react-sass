@@ -4,16 +4,16 @@ const Footer = () => {
   return (
     <footer className="horizantal">
       <div className="social-icons">
-        <a href="#">
+        <a href="#twitter">
           <i className="fab fa-twitter fa-2x"></i>
         </a>
-        <a href="#">
+        <a href="#facebook">
           <i className="fab fa-facebook fa-2x"></i>
         </a>
-        <a href="#">
+        <a href="#insta">
           <i className="fab fa-instagram fa-2x"></i>
         </a>
-        <a href="#">
+        <a href="#github">
           <i className="fab fa-github fa-2x"></i>
         </a>
       </div>
